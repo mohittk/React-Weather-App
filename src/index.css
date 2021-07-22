@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+
+
+}
+main h1{
+  font-size: 40px;
+  Color: rgb(0, 0, 0);
+  
+
+}
+
+
+.app {
+  
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(138, 138, 138), orange);
+  padding: 25px;
+}
+
+
+.search-ka-box {
+  width: 100%;
+  margin: 0 0 74px;
+}
+
+.search-ka-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+
+  background-color: sandybrown;
+  border-radius: 0 16px 0 16px ;
+  font: size 50px;
+  color: black;
+  transition: 0.4 ease-out;
+  box-shadow: 0 0 15px;
+
+}
+
+.location-ka-box .location{
+
+  color: white;
+  font-size: 60px ;
+  font-weight: 900;
+  text-align: center;
+  margin : 40px;
+  
+}
+
+.location-ka-box .date{
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+
+}
+.weather-ka-box{
+  text-align: center;
+}
+
+.weather-ka-box .temp{
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgb(238, 150, 74);
+  padding: 40px 25px;
+  color: white;
+  border-radius: 16px;
+  font-size: 100px;
+  font-weight: 900;
+
+}
+
+.weather-stat .stat{
+  color: white;
+  font-size: 30px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 300;
+  text-align: center;
+
+}

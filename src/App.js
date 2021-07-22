@@ -26,11 +26,6 @@ function App() {
 
     }
   }
-  const colorCreate = (c) => {
-    
-
-  }
-
   const dateCreate = (d) =>{
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct","Nov","DeC"];
@@ -44,7 +39,10 @@ function App() {
 
   }
   return (
-    <div className="app">
+    <div className="default">
+  
+    
+    <div className={(typeof weath.main != "undefined") ? ((weath.main.temp > 20) ? 'app warm' : 'app'): 'default'}>
       
       <main>
       <h1>Weather React App By Mohit</h1>
@@ -59,6 +57,11 @@ function App() {
           ></input>
           
         </div>
+
+        <div className="intro">
+          <h3> Made with 💗 in React</h3>
+        </div>
+
       
         {(typeof weath.main != "undefined")? (
        <>
@@ -84,6 +87,7 @@ function App() {
  
        
       </main>
+    </div>
     </div>
   );
 }

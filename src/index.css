@@ -131,7 +131,7 @@ main {
 
 .app .weather-ka-box .temp{
   position: relative;
-  border-outline: 1px solid red;
+  
   display: inline-block;
   margin: 30px auto;
   background-color: rgb(8, 137, 223);

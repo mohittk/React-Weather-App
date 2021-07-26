@@ -40,6 +40,7 @@ function App() {
   }
   return (
     <div className="default">
+     <script src="tilt.jquery.js"></script>
   
     
     <div className={(typeof weath.main != "undefined") ? ((weath.main.temp > 20) ? 'app warm' : 'app'): 'default'}>

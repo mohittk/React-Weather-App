@@ -2,6 +2,7 @@
 
 import React, {useState} from 'react';
 
+
 const api = {
   key: "2bbf10c8b7892cc5cd25da4fb5cb5c57",
   base: "https://api.openweathermap.org/data/2.5/",
@@ -26,6 +27,11 @@ function App() {
 
     }
   }
+
+ 
+
+
+
   const dateCreate = (d) =>{
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct","Nov","DeC"];
@@ -33,6 +39,8 @@ function App() {
     let date = d.getDate();
     let month = months[d.getMonth()];
     let year = d.getFullYear();
+   
+
 
     return `${day} ${date} ${month} ${year}`
 
@@ -69,12 +77,15 @@ function App() {
          <div className="location-ka-box">
           <div className="location"> {weath.name},{weath.sys.country} </div>
           <div className="date">{dateCreate(new Date())}</div>
+          
         </div>
 
         <div className="weather-ka-box">
           <div className="temp">
             {Math.round(weath.main.temp)}°c
+           
           </div>
+          
         </div>
 
         <div className="weather-stat">

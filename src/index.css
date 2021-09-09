@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   
-
-
 }
+
+/* body::-webkit-scrollbar{
+  display: none;
+} */
 .default{
   background-image: linear-gradient(#F4C430,white,green);
 
@@ -43,9 +45,11 @@ body {
 
 }
 main h1{
-  font-size: 40px;
+  font-size: 3rem;
   Color: rgb(0, 0, 0);
   font-family: 'Cairo', sans-serif;
+  text-align: center;
+  
 }
 
 
@@ -67,7 +71,7 @@ main {
   min-height: 100vh;
   background-color: linear-gradient(pink, green);
   
-  padding: 25px;
+  padding: 1.5rem;
 }
 
 
@@ -91,6 +95,14 @@ main {
   transition: 0.4 ease-out;
   box-shadow: 0 0 15px;
 
+}
+.app.warm .search-ka-box ::placeholder{
+  color: black;
+  font-weight: bold;
+}
+.app .search-ka-box ::placeholder{
+  color: black;
+  font-weight: bold;
 }
 .app.warm .search-ka-box .search-bar {
   display: block;
@@ -164,5 +176,22 @@ main {
   font-family: 'Libre Baskerville', serif;
   font-weight: 300;
   text-align: center;
+
+}
+
+.clock{
+  text-align: center;
+
+}
+
+.clock .clocksub{
+  position: relative;
+  display: inline-block;
+  background-color: rgb(245, 71, 71);
+  padding: 1.5rem;
+  color: white;
+  border-radius: 8px;
+  font-size: 2rem;
+  font-weight: 900;
 
 }
